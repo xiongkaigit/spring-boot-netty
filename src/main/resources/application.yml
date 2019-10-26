@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: prod
+
+netty:
+  # 监听端口
+  port: 40000
+  # 心跳超时时间(分)
+  idleTime: 3
+  # 最大线程数
+  maxThreads: 2048
+  # 数据包的最大长度
+  max_frame_length: 65535
+
+logging:
+  level:
+    io.swagger.models.parameters.AbstractSerializableParameter: error
